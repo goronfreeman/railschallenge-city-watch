@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150421182304) do
+ActiveRecord::Schema.define(version: 20150421195721) do
 
   create_table "emergencies", force: :cascade do |t|
     t.integer  "fire_severity"
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 20150421182304) do
 
   create_table "responders", force: :cascade do |t|
     t.string   "service_type"
-    t.boolean  "on_duty?",     default: false
-    t.boolean  "assigned?",    default: false
+    t.boolean  "on_duty",      default: false
+    t.boolean  "assigned",     default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
