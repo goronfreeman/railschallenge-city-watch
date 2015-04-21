@@ -53,6 +53,7 @@ GEM
     coderay (1.1.0)
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
+    docile (1.1.5)
     erubis (2.7.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
@@ -123,6 +124,11 @@ GEM
       rainbow (>= 1.99.1, < 3.0)
       ruby-progressbar (~> 1.4)
     ruby-progressbar (1.7.5)
+    simplecov (0.10.0)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     slop (3.6.0)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -158,5 +164,6 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.2.1)
   rubocop (= 0.30.0)
+  simplecov
   sqlite3 (= 1.3.10)
   web-console (~> 2.0)

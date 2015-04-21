@@ -1,6 +1,5 @@
 class Responder < ActiveRecord::Base
   validates :service_type, :on_duty, :assigned, presence: true
-  validates :on_duty, :assigned, inclusion: [true, false]
 
   scope :fire, -> { where(service_type: 'fire') }
   scope :police, -> { where(service_type: 'police') }

@@ -1,2 +1,3 @@
 class EmergencyResponseScoresController < ApplicationController
+  
 end
