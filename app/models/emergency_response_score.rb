@@ -1,5 +1,6 @@
 class EmergencyResponseScore < ActiveRecord::Base
-  
+  validates :fire_requested, :fire_provided, :police_requested, :police_provided, :medical_requested, :medical_provided, presence: true
+  validates :fire_requested, :fire_provided, :police_requested, :police_provided, :medical_requested, :medical_provided, numericality: { only_integer: true }
 end
 
 # == Schema Information

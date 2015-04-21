@@ -1,5 +1,6 @@
 class Emergency < ActiveRecord::Base
-  
+  validates :fire_severity, :police_severity, :medical_severity, presence: true
+  validates :fire_severity, :police_severity, :medical_severity, numericality: { only_integer: true }
 end
 
 # == Schema Information
