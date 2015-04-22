@@ -7,6 +7,9 @@ class EmergenciesController < ApplicationController
     @emergency = Emergency.build(emergency_params)
   end
 
+  def edit
+  end
+
   private
 
   def emergency_params
