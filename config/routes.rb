@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :emergencies do
+  resources :emergencies, defaults: { format: 'json' } do
   end
 
-  resources :responders do
+  resources :responders, defaults: { format: 'json' } do
   end
 end

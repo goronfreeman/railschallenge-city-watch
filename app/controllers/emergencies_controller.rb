@@ -1,4 +1,12 @@
 class EmergenciesController < ApplicationController
+  def index
+    @emergencies = Emergency.all
+  end
+
+  def show
+    @emergency = Emergency.find(params[:id])
+  end
+
   def new
     @emergency = Emergency.build
   end
@@ -7,7 +15,11 @@ class EmergenciesController < ApplicationController
     @emergency = Emergency.build(emergency_params)
   end
 
-  def edit
+  def update
+    @emergency = Emergency.find(params[:id])
+  end
+
+  def dispatch
   end
 
   private

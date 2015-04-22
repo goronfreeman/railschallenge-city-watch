@@ -1,10 +1,22 @@
 class RespondersController < ApplicationController
+  def index
+    @responders = Responder.all
+  end
+
+  def show
+    @responder = Responder.find(params[:id])
+  end
+
   def new
     @responder = Responder.build
   end
 
   def create
     @responder = Responder.build(responder_params)
+  end
+
+  def update
+    @responder = Responder.find(params[:id])
   end
 
   private
