@@ -1,10 +1,12 @@
 class RespondersController < ApplicationController
   def index
     @responders = Responder.all
+    render json: @responders
   end
 
   def show
     @responder = Responder.find(params[:id])
+    render json: @responder
   end
 
   def new
